@@ -1,5 +1,5 @@
 Note : Please download the zip and extract it. Use VSC for running the code.
-<h4>Project Description<h4>
+<h4>Project Description
 
 This is an 8 puzzle solver program which uses BFS Planning Algorithm to solve it self. BFS or Breadth First Search algorithm is an algorithm used for searching a tree data structure for a node that satisfies a given condition, in this case the goal node.
 
