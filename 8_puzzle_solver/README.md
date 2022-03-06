@@ -6,7 +6,8 @@ This is an 8 puzzle solver program which uses BFS Planning Algorithm to solve it
 
 
 <h3> Code Description</h3>
-* Queue Class
+
+*Queue Class
 1. The queue class implements pop() and append() functions of List. 
 2. It appends on the end of the list and pops the first element entered making it a First-In First Out behaviour.
 
