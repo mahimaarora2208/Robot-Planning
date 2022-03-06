@@ -7,11 +7,11 @@ import cv2
 
 # ********** Start and Goal Coordinates (Parameters that can be changed by User) ***********
 
-s_x = 10  # Start x coord
-s_y = 15  # Start y coord
+s_x = 36  # Start x coord
+s_y = 185 # Start y coord
 s_idx = (s_x, s_y)
-g_x = 140 # Goal x coord
-g_y = 150  # Goal y coord
+g_x = 115 # Goal x coord
+g_y = 210  # Goal y coord
 g_idx = (g_x, g_y)
 
 c = 5  # Clearance
@@ -370,15 +370,15 @@ def main():
     obstacle_map() # Shows the obstacle map
 
     # Checks if Initial and Final Nodes are not in the Obstacle
-    # if not init_mat[s_idx[0]][s_idx[1]]:
-    #     print("Start node in the obstacle")
-    # else:
-    #     print("Start node not in obstacle")
+    if not init_mat[s_idx[0]][s_idx[1]]:
+        print("WARNING: Start node in the obstacle!")
+    else:
+        print("Start node not in obstacle")
 
-    # if not init_mat[g_idx[0]][g_idx[1]]:
-    #     print("Goal node in the obstacle")
-    # else:
-    #     print("Goal node not in obstacle")
+    if not init_mat[g_idx[0]][g_idx[1]]:
+        print("WARNING: Goal node in the obstacle!")
+    else:
+        print("Goal node not in obstacle")
 
     # algorithm related initalisation
     nodeCost = 0
@@ -408,8 +408,8 @@ def main():
         
         # Checks if goal node is reached
         if node == g_idx:
-            print('\n ******** GOAL IS REACHED ******** \n')
             visualization(visited_list,map_img, child_parent_map, node)
+            print('\n ******** GOAL IS REACHED ******** \n')
             stop_flag = True
         
         for i in range(len(index)):
