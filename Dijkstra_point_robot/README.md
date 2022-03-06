@@ -37,13 +37,9 @@ The following test cases were tested and stored in the folder "testCases"
 |     Start     |    Goal       | time taken        |
 | ------------- | ------------- | -----------       |
 |    (10, 15)   |  (140, 150)   |  16.46523         |
-|    (33, 33)   |  (140, 150)   |          |
+|    (33, 33)   |  (140, 150)   |  17.28554         |
 |    (200, 200) |  (100, 20)    |  15.68940         |
 |    (36, 185)  |  (115, 210)   |  warning          | 
 |    (0, 251)   | ( 111, 11)    | Index out of bound|
-
-
-
-
 
 
