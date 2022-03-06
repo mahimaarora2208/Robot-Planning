@@ -32,8 +32,8 @@ g_y = 150
 * Test Cases
 The following test cases were tested and stored in the folder "testCases"
 
-<h5>Start           Goal             TimeTaken</h5>
-------------------------------------------------
-(15,15)        (140,150)    
-
+|     Start     |    Goal       |
+| ------------- | ------------- |
+|    (10,15)    |  (140,150)    |
+|  |  |
 
