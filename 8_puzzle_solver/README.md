@@ -1,11 +1,11 @@
 Note : Please download the zip and extract it. Use VSC for running the code.
 
-<h4>Project Description
+<h4>Project Description</h4>
 
 This is an 8 puzzle solver program which uses BFS Planning Algorithm to solve it self. BFS or Breadth First Search algorithm is an algorithm used for searching a tree data structure for a node that satisfies a given condition, in this case the goal node.
 
 
-<h4> Code Description
+<h4> Code Description</h4>
 - Queue Class
 1. The queue class implements pop() and append() functions of List. 
 2. It appends on the end of the list and pops the first element entered making it a First-In First Out behaviour.
