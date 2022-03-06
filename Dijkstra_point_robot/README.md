@@ -37,5 +37,7 @@ The following test cases were tested and stored in the folder "testCases"
 |     Start     |    Goal       | time taken  |
 | ------------- | ------------- | ----------- |
 |    (10, 15)   |  (140,150)    |  16.46523   |
-|    (36, 185)  |  (115, 210)   |  2.347099   | # Gives warning since it is on obstacle 
+|    (36, 185)  |  (115, 210)   |  2.347099   | 
+
+# case 2 Gives warning since it is on obstacle 
 
