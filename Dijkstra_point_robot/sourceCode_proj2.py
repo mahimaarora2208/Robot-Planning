@@ -1,4 +1,5 @@
 import time
+from tracemalloc import start
 import matplotlib.pyplot as plt
 import math
 import numpy as np
@@ -6,11 +7,11 @@ import cv2
 
 # ********** Start and Goal Coordinates (Parameters that can be changed by User) ***********
 
-s_x = 15  # Start x coord
+s_x = 10  # Start x coord
 s_y = 15  # Start y coord
 s_idx = (s_x, s_y)
 g_x = 140 # Goal x coord
-g_y = 140  # Goal y coord
+g_y = 150  # Goal y coord
 g_idx = (g_x, g_y)
 
 c = 5  # Clearance
@@ -369,16 +370,15 @@ def main():
     obstacle_map() # Shows the obstacle map
 
     # Checks if Initial and Final Nodes are not in the Obstacle
-    
-    if not init_mat[s_idx[0]][s_idx[1]]:
-        print("Initial node in the obstacle")
-    else:
-        print("initial node not in obstacle")
+    # if not init_mat[s_idx[0]][s_idx[1]]:
+    #     print("Start node in the obstacle")
+    # else:
+    #     print("Start node not in obstacle")
 
-    if not init_mat[g_idx[0]][g_idx[1]]:
-        print("goal node in the obstacle")
-    else:
-        print("goal node not in obstacle")
+    # if not init_mat[g_idx[0]][g_idx[1]]:
+    #     print("Goal node in the obstacle")
+    # else:
+    #     print("Goal node not in obstacle")
 
     # algorithm related initalisation
     nodeCost = 0
@@ -392,6 +392,7 @@ def main():
     open_q.append(nodeCost)
     stop_flag = False
 
+    start_t = time.process_time() 
     while len(idx_q) != 0 and not stop_flag:
         node = idx_q[0]
         visited.add(node)
@@ -425,6 +426,9 @@ def main():
                     open_q.append(init_mat[index[i][0]][index[i][1]])
                     child_parent_map[index[i]] = node
 
+    end_t = time.process_time()
+    tt = end_t - start_t
+    print('Time taken:', tt)
 
 
 if __name__ == '__main__':

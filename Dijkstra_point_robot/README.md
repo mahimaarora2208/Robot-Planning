@@ -32,8 +32,8 @@ g_y = 150
 * Test Cases
 The following test cases were tested and stored in the folder "testCases"
 
-|     Start     |    Goal       |
-| ------------- | ------------- |
+|     Start     |    Goal       | time taken  |
+| ------------- | ------------- |  16.46523   |
 |    (10,15)    |  (140,150)    |
 |  |  |
 
