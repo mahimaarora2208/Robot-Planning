@@ -34,8 +34,16 @@ g_y = 150
 * Test Cases
 The following test cases were tested and stored in the folder "testCases"
 
-|     Start     |    Goal       | time taken  |
-| ------------- | ------------- | ----------- |
-|    (10, 15)   |  (140,150)    |  16.46523   |
-|    (36, 185)  |  (115, 210)   |  2.347099   | # Gives warning since it is on obstacle 
+|     Start     |    Goal       | time taken        |
+| ------------- | ------------- | -----------       |
+|    (10, 15)   |  (140, 150)   |  16.46523         |
+|    (33, 33)   |  (140, 150)   |          |
+|    (200, 200) |  (100, 20)    |  15.68940         |
+|    (36, 185)  |  (115, 210)   |  warning          | 
+|    (0, 251)   | ( 111, 11)    | Index out of bound|
+
+
+
+
+
 

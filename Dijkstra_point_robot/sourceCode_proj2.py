@@ -7,11 +7,11 @@ import cv2
 
 # ********** Start and Goal Coordinates (Parameters that can be changed by User) ***********
 
-s_x = 36  # Start x coord
-s_y = 185 # Start y coord
+s_x = 33 # Start x coord
+s_y = 33 # Start y coord
 s_idx = (s_x, s_y)
-g_x = 115 # Goal x coord
-g_y = 210  # Goal y coord
+g_x = 140 # Goal x coord
+g_y = 150 # Goal y coord
 g_idx = (g_x, g_y)
 
 c = 5  # Clearance
